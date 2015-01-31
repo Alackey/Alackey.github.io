@@ -36,15 +36,15 @@ body {
 }
 
 .nav a:hover {
-	color: gray;
+	border-bottom: 3px solid #EFEFEF;
 }
 
 .nav a {
 	display: block;
 	margin-top: 23px;
+	padding-bottom: 16px;
 	text-decoration: none;
 	color: #fff;
-
 }
 
 .middle {
@@ -115,6 +115,7 @@ body {
 	background-color: #183552;
 	margin: 0;
 	border-top: 2px solid black;
+	bottom: 0;
 }
 
 .footer ul {
