@@ -1,0 +1,159 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	background-color: #183552;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	text-align: center;
+
+}
+
+.nav ul {
+	list-style-type: none;
+	font-weight: bold;
+	margin: 0;
+}
+
+.nav_left {
+	float: left;
+	margin-left: 20px;
+}
+
+.nav_right {
+	float: right;
+	margin-right: 10px;
+}
+
+.nav li {
+	display: inline-block;
+	padding-left: 9px;
+	padding-right: 9px;
+	height: 100%;
+}
+
+.nav a:hover {
+	color: gray;
+}
+
+.nav a {
+	display: block;
+	margin-top: 23px;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.middle {
+	background-color: #EFEFEF;
+	width: 100%;
+	height: 450px;
+}
+
+.middle_container {
+	height: 100%;
+	width: 550px;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.left_bracket {
+	width: 150px;
+	height: 100%;
+	margin-right: 0px;
+	display: inline-block;
+	float: left;
+}
+.left_bracket img {
+	width: 100%;
+	height: 100%;
+}
+
+.right_bracket {
+	width: 150px;
+	height: 100%;
+	margin-right: 0px;
+	display: inline-block;
+	float: left;
+}
+
+.right_bracket img{
+	width: 100%;
+	height: 100%;
+}
+
+.middle_content {
+	/*margin-left: auto;
+	margin-right: auto;*/
+	height: 300px;
+	width: 250px;
+	display: inline-block;
+	float: left;
+	margin-top: 80px;
+}
+
+.middle_content img {
+	width: 250px;
+	height: 250px;
+	border-radius: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.middle_content h1 {
+	text-align: center;
+	color: #183552;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: #183552;
+	margin: 0;
+	border-top: 2px solid black;
+}
+
+.footer ul {
+	list-style-type: none;
+	font-weight: bold;
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer li {
+	display: inline-block;
+}
+
+.footer_email {
+	font-size: 2em;
+	margin: 0;
+	padding-top: 7px;
+}
+
+.footer li {
+	color: #CCCCCC;
+}
+
+.footer_links {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer_links a {
+	margin: 15px;
+}
+
+.footer_copyright {
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: .8em;
+}
+
