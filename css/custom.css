@@ -3,6 +3,10 @@
 	border-bottom: 1px solid #CECECE;
 }
 
+.navbar-default .navbar-nav > li > a {
+color: #fff;
+}
+
 .about {
 	padding-top: 20px;
 	padding-bottom: 20px;
