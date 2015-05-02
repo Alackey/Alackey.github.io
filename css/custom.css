@@ -46,6 +46,11 @@ color: #fff;
 	color: LightGray;
 }
 
+.CodeSkills {
+	padding-left: 0px;
+	list-style: none;
+}
+
 .navbar-default {
 	background-color: #183552;
 	margin-bottom: 0;
