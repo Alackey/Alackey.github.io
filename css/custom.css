@@ -12,6 +12,15 @@ color: #fff;
 	padding-bottom: 20px;
 }
 
+.socialLinks{
+	text-align: center;
+}
+
+.socialLinks img {
+	height: 5%;
+	width: 5%;
+}
+
 .skills {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -47,8 +56,7 @@ color: #fff;
 }
 
 .CodeSkills {
-	padding-left: 0px;
-	list-style: none;
+	padding-left: 15px;
 }
 
 .navbar-default {
