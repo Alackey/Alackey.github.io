@@ -10,6 +10,7 @@
 
     <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet" type="text/css">
 
+
 </head>
 <body>
 
@@ -23,16 +24,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Anthony Lackey</a>
+                <a class="navbar-brand" href="/">Anthony Lackey</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="https://github.com/Alackey/">GitHub</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="https://github.com/Alackey/">GitHub</a></li>
+                    <li><a data-scroll href="#resume">Resume</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -53,7 +54,7 @@
         </div>
     </div>
 
-    <a name="about"></a>
+    <a id="about"></a>
     <div class="about">
         <div class="container">
             <div class="row">
@@ -71,7 +72,7 @@
             </div>
         </div>
 
-        <a name="resume"></a>
+        <a id="resume"></a>
         <div class="skills">
             <div class="container">
                 <div class="row">
@@ -134,7 +135,7 @@
             </div>
         </div>
 
-        <a name="contact"></a>
+        <a id="contact"></a>
         <div class="footer">
             <div class="container">
                 <ul class="email">
@@ -150,9 +151,16 @@
             </div>
         </div>
 
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <!--Include all compiled plugins (below), or include individual files as needed-->
         <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/home.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/smooth-scroll.min.js') }}"></script>
+        <script>
+            smoothScroll.init({speed: 800, offset: 50});
+        </script>
     </body>
     </html>
