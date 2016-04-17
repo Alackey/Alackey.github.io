@@ -47,30 +47,65 @@
                 </div>
             </div>
         </div>
-        <img src="{{ url_for('static',filename='img/meBracket.png') }}" class="img-responsive center-block" alt="Left Bracket">
-        <div class="socialLinks">
-            <a href="https://github.com/Alackey/"><img src="{{ url_for('static',filename='img/github.png') }}"></img></a>
-            <a href="https://www.linkedin.com/in/alackey"><img src="{{ url_for('static',filename='img/linkedin.png') }}"></img></a>
-        </div>
-    </div>
-
-    <a id="about"></a>
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>About</h2>
-                    <hr>
+        <div class="container" id="intro">
+            <div class"row">
+                <div class="col-lg-4">
+                    <img class="img-responsive img-circle" src="{{ url_for('static',filename='img/me.jpg') }}">
+                </div>
+                <div class="col-lg-8" id="about">
                     <h4 class="text-justify">I am a Sophmore currently attending Cal Poly Pomona.
                         I have a 3.34 GPA and am working towards a Bachelor of Science in
                         Electronics and Computer Engineering Technology, but hoping to change my
                         major to B.S. in Computer Science Fall 2015.</h4>
-                        <br>
-                        <h4>I am currently learning web development using Flask (python).</h4>
+                    <br>
+                    <h4>I am currently learning web development using Flask (python).</h4>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="{{ url_for('static',filename='img/meBracket.png') }}" class="img-responsive center-block" alt="Left Bracket">
+        <div class="socialLinks">
+            <a href="https://github.com/Alackey/"><img src="{{ url_for('static',filename='img/github.png') }}"></img></a>
+            <a href="https://www.linkedin.com/in/alackey"><img src="{{ url_for('static',filename='img/linkedin.png') }}"></img></a>
+        </div> -->
+    </div>
+
+    <a id="projects"></a>
+    <div class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Projects</h2>
+                    <hr>
+                    <div class="row" id="projects">
+                        <div class="col-lg-4">
+                            <div class="col-lg-12 project">
+                                <a class="projectLink" href="https://github.com/Alackey/RedditSaved">
+                                    <img class="img-responsive" src="{{ url_for('static',filename='img/RedditSaved_dash.png') }}">
+                                    <h3>Reddit Saved</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-12 project">
+                                <a class="projectLink" href="https://github.com/Alackey/ServiceMarketplace">
+                                    <img class="img-responsive" src="{{ url_for('static',filename='img/ServiceMarketplace_home.png') }}">
+                                    <h3>Service Marketplace</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-12 project">
+                                <a class="projectLink" href="https://github.com/Alackey/Guess-The-Tags">
+                                    <img class="img-responsive" src="{{ url_for('static',filename='img/GetTheTags_play.png') }}">
+                                    <h3>Get The Tags</h3>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
         <a id="resume"></a>
         <div class="skills">

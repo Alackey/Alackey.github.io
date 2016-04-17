@@ -2,15 +2,20 @@
 	background-color: #F1F1F1;
 	border-bottom: 1px solid #CECECE;
     margin-top: 30px;
+	padding: 20px;
 }
 
 .navbar-default .navbar-nav > li > a {
 color: #fff;
 }
 
-.about {
-	padding-top: 20px;
-	padding-bottom: 20px;
+#intro {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#about {
+	padding: 60px 50px 60px 50px;
 }
 
 .socialLinks{
@@ -20,6 +25,24 @@ color: #fff;
 .socialLinks img {
 	height: 5%;
 	width: 5%;
+}
+
+#projects {
+	padding: 10px 0 20px 0;
+}
+
+.project {
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.project img {
+	margin-bottom: 10px;
 }
 
 .skills {
