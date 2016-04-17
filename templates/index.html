@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anthony Lackey's Website</title>
+
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+
+    <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Anthony Lackey</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/Alackey/">GitHub</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="name-me">
+        <div class="container name">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>Anthony Lackey</h1>
+                </div>
+            </div>
+        </div>
+        <img src="{{ url_for('static',filename='img/meBracket.png') }}" class="img-responsive center-block" alt="Left Bracket">
+        <div class="socialLinks">
+            <a href="https://github.com/Alackey/"><img src="{{ url_for('static',filename='img/github.png') }}"></img></a>
+            <a href="https://www.linkedin.com/in/alackey"><img src="{{ url_for('static',filename='img/linkedin.png') }}"></img></a>
+        </div>
+    </div>
+
+    <a name="about"></a>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>About</h2>
+                    <hr>
+                    <h4 class="text-justify">I am a Sophmore currently attending Cal Poly Pomona.
+                        I have a 3.34 GPA and am working towards a Bachelor of Science in
+                        Electronics and Computer Engineering Technology, but hoping to change my
+                        major to B.S. in Computer Science Fall 2015.</h4>
+                        <br>
+                        <h4>I am currently learning web development using Flask (python).</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a name="resume"></a>
+        <div class="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Resume</h2>
+                        <hr>
+                        <div class="download-container">
+                            <a class="download-button" href="{{ url_for('static',filename='files/techResume.pdf') }}">Open PDF</a>
+                        </div>
+                        <h3><u>Experience</u></h3>
+                        <h4><b>Quality Assurance Intern - <i>Mercury Insurance</i></b></h4>
+                        <ul class="resume_descriptions">
+                            <li><h5>Create test scenarios that need to be tested for new features.</h5></li>
+                            <li><h5>Manually test case scenarios and mark them pass or fail.</h5></li>
+                            <li><h5>Find and report defects that occur in the software.</h5></li>
+                        </ul>
+                        <h3><u>Projects</u></h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><b><a href="https://github.com/Alackey/File-Deleter">
+                                    File Deleter
+                                </a></b></h4>
+                                <ul class="resume_descriptions">
+                                    <li><h5>
+                                        A program made in using Java with a desktop GUI using the JavaFX
+                                        library to delete files anywhere on the computer based on date and
+                                        file type.
+                                    </h5></li>
+                                    <li><h5>
+                                        Uses the Google Drive API to save the deleted items log in Google
+                                        Drive upon request.
+                                    </h5></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><b><a href="http://challengepost.com/software/skydive-survival">
+                                    Skydive Survival - Oculus Rift
+                                </a></b></h4>
+                                <ul class="resume_descriptions">
+                                    <li><h5>
+                                        Created a game at a hackathon implementing the Oculus Rift.
+                                    </h5></li>
+                                    <li><h5>
+                                        Wrote C# scripts to create many of the conditionals for making the
+                                        game more realistic and rotating the camera.
+                                    </h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3><u>Skills</u></h3>
+                        <ul class="CodeSkills">
+                            <li><h4>Java</h4></li>
+                            <li><h4>HTML</h4></li>
+                            <li><h4>CSS</h4></li>
+                            <li><h4>Git</h4></li>
+                            <li><h4>UNIX</h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a name="contact"></a>
+        <div class="footer">
+            <div class="container">
+                <ul class="email">
+                    <h3>Email: </h3>
+                    <h3><a href="#about">alackey96@gmail.com</a></h3>
+                </ul>
+                <ul class="bottom">
+                    <li><a href="https://www.linkedin.com/in/alackey">LinkedIn</a></li>
+                    <li><a href="https://github.com/Alackey/">Github</a></li>
+                    <li><a href="#about">Contact</a></li>
+                </ul>
+                <p>&copy 2015 Anthony Lackey</p>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--Include all compiled plugins (below), or include individual files as needed-->
+        <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    </body>
+    </html>
