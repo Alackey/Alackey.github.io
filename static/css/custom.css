@@ -72,6 +72,18 @@ h1 {
 	text-align: center;
 	margin: 10px 0 10px 0;
 	text-align: center;
+	border: 1px solid #616B9F;
+	border-radius: 3px;
+	padding: 10px 0 10px 0;
+	color: #616B9F;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.socialLinks:hover {
+	background-color: #616B9F;
+	color: white !important;
+
 }
 
 #projects {
