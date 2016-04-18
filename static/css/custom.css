@@ -6,12 +6,47 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-color: #fff;
+	color: #fff;
+}
+
+.navbar-default {
+	background-color: #183552;
+	margin-bottom: 0;
+	border: 0;
+}
+
+.nav.navbar-nav li a {
+    color: #fff;
+}
+
+.nav.navbar-nav li a:hover {
+    color: #F6624A;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #F6624A;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #183552;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+	color: #fff;
 }
 
 #intro {
 	margin-bottom: 50px;
 	margin-top: 50px;
+}
+
+#intro img {
+	margin: 0 auto;
 }
 
 #about {
@@ -45,7 +80,7 @@ color: #fff;
 	margin-bottom: 10px;
 }
 
-.skills {
+.contact {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #F1F1F1;
@@ -67,50 +102,6 @@ color: #fff;
 	height: 40px;
 	padding: 10px;
 	top: 50%;
-}
-
-.skills h2 {
-	margin-top: 10px;
-}
-
-.skills hr, .about hr {
-	border-color: LightGray;
-	background-color: LightGray;
-	color: LightGray;
-}
-
-.CodeSkills {
-	padding-left: 15px;
-}
-
-.navbar-default {
-	background-color: #183552;
-	margin-bottom: 0;
-}
-
-.nav.navbar-nav li a {
-    color: #fff;
-}
-
-.nav.navbar-nav li a:hover {
-    color: #F6624A;
-}
-
-.navbar-default .navbar-brand {
-    color: #fff;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: #F6624A;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #183552;
-}
-
-.navbar-default .navbar-toggle .icon-bar{
-	background-color: #fff;
-	color: #fff;
 }
 
 .col-sm-12 hr {
