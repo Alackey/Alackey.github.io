@@ -30,10 +30,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="https://github.com/Alackey/">GitHub</a></li>
-                    <li><a data-scroll href="#resume">Resume</a></li>
-                    <li><a data-scroll href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/Alackey/">GitHub</a></li>
+                    <li><a data-scroll href="#projects">Projects</a></li>
+                    <li><a data-scroll href="#experience">Experience</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -53,20 +52,29 @@
                     <img class="img-responsive img-circle" src="{{ url_for('static',filename='img/me.jpg') }}" width="400" height="400">
                 </div>
                 <div class="col-lg-8" id="about">
-                    <h4 class="text-justify">I am a Sophmore currently attending Cal Poly Pomona.
-                        I have a 3.34 GPA and am working towards a Bachelor of Science in
-                        Electronics and Computer Engineering Technology, but hoping to change my
-                        major to B.S. in Computer Science Fall 2015.</h4>
-                        <br>
-                        <h4>I am currently learning web development using Flask (python).</h4>
-                    </div>
+                    <h4>
+                        Hello! Welcome to my website! I am a Sophmore at Cal Poly
+                        Pomona in progress of completing my B.S. in Computer Science.
+                        I am a huge fan of Web Development using Python, with most
+                        of my projects using Django and Flask. Take a look at my
+                        projects below.
+                    </h4>
                 </div>
             </div>
-            <!-- <img src="{{ url_for('static',filename='img/meBracket.png') }}" class="img-responsive center-block" alt="Left Bracket">
-            <div class="socialLinks">
-            <a href="https://github.com/Alackey/"><img src="{{ url_for('static',filename='img/github.png') }}"></img></a>
-            <a href="https://www.linkedin.com/in/alackey"><img src="{{ url_for('static',filename='img/linkedin.png') }}"></img></a>
-        </div> -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 socialLinks">
+                    <a href="https://www.linkedin.com/in/alackey"><h3>LinkedIn</h3></a>
+                </div>
+                <div class="col-lg-4 socialLinks">
+                    <a href="https://github.com/Alackey/"><h3>Github</h3></a>
+                </div>
+                <div class="col-lg-4 socialLinks">
+                    <a href="{{ url_for('static',filename='files/techResume.pdf') }}"><h3>Download Resume</h3></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <a id="projects"></a>
@@ -107,37 +115,44 @@
         </div>
     </div>
 
-    <a id="contact"></a>
-    <div class="contact">
+    <a id="experience"></a>
+    <div class="experience">
         <div class="container">
+            <h2>Experience</h2>
+            <hr>
             <div class="row">
-                <div class="col-sm-12">
-                    <h2>Contact</h2>
-                    <hr>
-                    <div class="download-container">
-                        <a class="download-button" href="{{ url_for('static',filename='files/techResume.pdf') }}">Open PDF</a>
-                    </div>
-                    <h4>Github</h4>
-                    <h4>Linkedin</h4>
-                    <h4>Email</h4>
+                <div class="col-lg-12 job">
+
+                    <span>Quality Assurance Intern - Mercury Insurance</span>
+                    <p>
+                    - Create test scenarios that need to be tested for new features.
+                    <br>
+                    - Found obscure and rare defects before the feature was published to thousands of users.
+                    <br>
+                    - Practice Agile / Scrum Methodologies.
+                    <br>
+                    - Communicate with Developers and Business Analysts to determine the cause of defects.
+                    <br>
+                    - Test mobile, tablet, and desktop configurations for concurrency and regression.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <a id="contact"></a>
+
+    <a id="footer"></a>
     <div class="footer">
         <div class="container">
             <ul class="email">
-                <h3>Email: </h3>
-                <h3><a href="#about">alackey96@gmail.com</a></h3>
+                <span>Email: </span>
+                <span><a href="#about">alackey96@gmail.com</a></span>
             </ul>
             <ul class="bottom">
                 <li><a href="https://www.linkedin.com/in/alackey">LinkedIn</a></li>
                 <li><a href="https://github.com/Alackey/">Github</a></li>
-                <li><a href="#about">Contact</a></li>
             </ul>
-            <p>&copy 2015 Anthony Lackey</p>
+            <p>&copy 2016 Anthony Lackey</p>
         </div>
     </div>
 
@@ -146,7 +161,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <!--Include all compiled plugins (below), or include individual files as needed-->
+
     <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/home.js') }}"></script>
     <script src="{{ url_for('static',filename='js/smooth-scroll.min.js') }}"></script>
     <script>
