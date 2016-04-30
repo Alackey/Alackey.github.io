@@ -116,6 +116,11 @@
 	padding: 10px 0 20px 0;
 }
 
+#projects_cont {
+	opacity: 0;
+	transition: opacity 2s;
+}
+
 .project {
 	text-align: center;
 	padding: 10px;
@@ -221,6 +226,10 @@ h1 {
 }
 
 a:hover {
+	text-decoration: none;
+}
+
+a {
 	text-decoration: none;
 }
 
