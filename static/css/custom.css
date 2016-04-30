@@ -1,3 +1,6 @@
+
+/* Navbar */
+
 .navbar-default .navbar-nav > li > a {
 	color: #fff;
 }
@@ -32,6 +35,9 @@
 	background-color: #fff;
 	color: #fff;
 }
+
+
+/* Intro/Me */
 
 .name-me {
 	background-image: url("../img/subtle_grunge.png");
@@ -72,6 +78,29 @@
 	color: white !important;
 }
 
+
+/* Skills */
+
+.skill {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.skill img {
+	display: block;
+	margin: 0 auto;
+	max-width: 10em;
+}
+
+.skillName {
+	display: block;
+	font-size: 1.3em;
+	margin-top: 5px;
+}
+
+
+/* Projects */
+
 #projects {
 	padding: 10px 0 20px 0;
 }
@@ -79,7 +108,9 @@
 .project {
 	text-align: center;
 	padding: 10px;
+	margin-top: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+	transition: box-shadow 400ms;
 }
 
 .project:hover {
@@ -110,6 +141,9 @@
 	width: 25px;
 }
 
+
+/* Experience */
+
 .experience {
 	padding-bottom: 20px;
 	background-image: url("../img/subtle_grunge.png");
@@ -119,6 +153,9 @@
 .experience span {
 	font-size: 1.6em;
 }
+
+
+/* Footer */
 
 .footer {
 
@@ -157,7 +194,7 @@
 }
 
 
-/* Globals */
+/* Global Elements */
 
 hr {
 	border-color: gray;
