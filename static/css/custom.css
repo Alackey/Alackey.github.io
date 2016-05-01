@@ -123,6 +123,7 @@
 
 .project {
 	text-align: center;
+	position: relative;
 	padding: 10px;
 	margin-top: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
@@ -136,6 +137,44 @@
 .project img {
 	margin-bottom: 10px;
 	margin: 0 auto;
+}
+
+.infoIcon {
+	width: 30px;
+	height: 30px;
+	color: white;
+	background-color: gray;
+	border-radius: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-top: 4px;
+	z-index: 2;
+}
+
+.infoIcon:hover {
+	border: 1px solid black;
+}
+
+#redditSavedInfo {
+	position: absolute;
+	/*width: 97%;*/
+	height: 100%;
+	top: 0;
+	text-align: center;
+	background-color: white;
+	margin: 0 auto;
+	padding: 30px 40px 0 40px;
+}
+
+.rsInfoTitle {
+	font-size: 1.5em;
+}
+
+.rsInfoDesc {
+	font-size: 1.3em;
 }
 
 .icon-div {
