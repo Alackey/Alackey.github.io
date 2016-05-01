@@ -158,7 +158,15 @@
 	opacity: 1;
 }
 
-#redditSavedInfo {
+.infoIcon:hover~#serviceMarketInfo {
+	opacity: 1;
+}
+
+.infoIcon:hover~#guessTagsInfo {
+	opacity: 1;
+}
+
+.infoDiv {
 	position: absolute;
 	height: 100%;
 	top: 0;
@@ -170,11 +178,11 @@
 	transition: opacity 500ms;
 }
 
-#rsInfoTitle {
+.infoTitle {
 	font-size: 1.5em;
 }
 
-#rsInfoDesc {
+.infoDesc {
 	font-size: 1.3em;
 }
 
