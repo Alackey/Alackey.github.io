@@ -6,7 +6,7 @@
 }
 
 .navbar-default {
-	background-color: #183552;
+	background-color: #616B9F;
 	margin-bottom: 0;
 	border: 0;
 }
@@ -16,7 +16,7 @@
 }
 
 .nav.navbar-nav li a:hover {
-    color: #616B9F;
+    color: gray;
 }
 
 .navbar-default .navbar-brand {
@@ -24,11 +24,11 @@
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #616B9F;
+    color: gray;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #183552;
+	background-color: #616B9F;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
