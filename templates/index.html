@@ -1,340 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anthony Lackey's Website</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anthony Lackey's Website</title>
 
-    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
 
-    <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ url_for('static',filename='css/animate.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static',filename='css/animate.css') }}" rel="stylesheet" type="text/css">
 
 
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Anthony Lackey</a>
-            </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Anthony Lackey</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/Alackey/" target="_blank">GitHub</a></li>
-                    <li><a data-scroll href="#projects">Projects</a></li>
-                    <li><a data-scroll href="#experience">Experience</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/Alackey/" target="_blank">GitHub</a></li>
+          <li><a data-scroll href="#projects">Projects</a></li>
+          <li><a data-scroll href="#experience">Experience</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-    <div class="name-me">
-        <div class="container name">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>Anthony Lackey</h1>
-                </div>
-            </div>
+  <div class="name-me">
+    <div class="container name">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Anthony Lackey</h1>
         </div>
-        <div class="container" id="intro">
-            <div class"row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-circle" src="{{ url_for('static',filename='img/me.jpg') }}" width="400" height="400">
-                </div>
-                <div class="col-lg-8" id="about">
-                    <h4>
-                        Hello! Welcome to my website! I am a sophmore at Cal Poly
-                        Pomona in progress of completing my B.S. in Computer Science.
-                        I am a huge fan of Web Development using Python, with most
-                        of my projects using Django and Flask. Take a look at my
-                        projects below.
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="https://www.linkedin.com/in/alackey" target="_blank">
-                        <div class="col-lg-12 socialLinks">
-                            <span>LinkedIn</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="https://github.com/Alackey/" target="_blank">
-                        <div class="col-lg-12 socialLinks">
-                            <span>Github</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="{{ url_for('static',filename='files/resume.pdf') }}" target="_blank">
-                        <div class="col-lg-12 socialLinks">
-                                <span>Download Resume</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-    <a id="skills"></a>
-    <div class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <hr>
-            <!-- 1st row of skills -->
-            <div class="row" id="skillsRow1">
-                <div class="col-sm-4 col-xs-4">
-                    <!-- Python -->
-                    <div class="skill">
-                        <img src="../static/img/skills/python-original.svg">
-                        <span class="skillName">Python</span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                    <!-- Django -->
-                    <div class="skill">
-                        <img src="../static/img/skills/django-original.svg">
-                        <span class="skillName">Django</span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                    <!-- Javascript -->
-                    <div class="skill">
-                        <img src="../static/img/skills/javascript-original.svg">
-                        <span class="skillName">Javascript</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2nd row of skills -->
-            <div class="row" id="skillsRow2">
-                <div class="col-sm-2 col-xs-4">
-                    <!-- HTML -->
-                    <div class="skill">
-                        <img src="../static/img/skills/html5-original.svg">
-                        <span class="skillName">HTML</span>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <!-- CSS -->
-                    <div class="skill">
-                        <img src="../static/img/skills/css3-original.svg">
-                        <span class="skillName">CSS</span>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <!-- Java -->
-                    <div class="skill">
-                        <img src="../static/img/skills/java-original.svg">
-                        <span class="skillName">Java</span>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <!-- Git -->
-                    <div class="skill">
-                        <img src="../static/img/skills/git-original.svg">
-                        <span class="skillName">Git</span>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <!-- Linux -->
-                    <div class="skill">
-                        <img src="../static/img/skills/linux-original.svg">
-                        <span class="skillName">Linux</span>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <!-- PostgreSQL -->
-                    <div class="skill">
-                        <img src="../static/img/skills/postgresql-original.svg">
-                        <span class="skillName">PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
+    <div class="container" id="intro">
+      <div class"row">
+        <div class="col-lg-4">
+          <img class="img-responsive img-circle" src="{{ url_for('static',filename='img/me.jpg') }}" width="400" height="400">
         </div>
+        <div class="col-lg-8" id="about">
+          <h4>
+            Hello! Welcome to my website! I am a sophmore at Cal Poly
+            Pomona in progress of completing my B.S. in Computer Science.
+            I am a huge fan of Web Development using Python, with most
+            of my projects using Django and Flask. Take a look at my
+            projects below.
+          </h4>
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="https://www.linkedin.com/in/alackey" target="_blank">
+            <div class="col-lg-12 socialLinks">
+              <span>LinkedIn</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://github.com/Alackey/" target="_blank">
+            <div class="col-lg-12 socialLinks">
+              <span>Github</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="{{ url_for('static',filename='files/resume.pdf') }}" target="_blank">
+            <div class="col-lg-12 socialLinks">
+              <span>Download Resume</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <a id="projects"></a>
-    <div class="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Projects</h2>
-                    <hr>
-                    <div class="row" id="projects_cont">
-                        <div class="col-lg-4">
-                            <div class="col-lg-12 project">
-                                <div class="infoIcon">i</div>
-                                <img class="img-responsive" src="{{ url_for('static',filename='img/RedditSaved_dash.png') }}">
-                                <div id="redditSavedInfo" class="infoDiv">
-                                    <p id="rsInfoTitle" class="infoTitle">Back-end and Front-end</p>
-                                    <br>
-                                    <p id="rsInfoDesc" class="infoDesc">
-                                        A website that uses the Reddit API that
-                                        allows you to manage and store Reddit
-                                        saved posts with the back-end being in
-                                        Python using Django and PostgreSQL.
-                                    </p>
-                                </div>
-                                <h3>Reddit Saved</h3>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 ">
-                                        <div class="col-sm-12 col-xs-12 ">
-                                            <a href="https://github.com/Alackey/RedditSaved" target="_blank" class="text-center">
-                                                <div class="icon-div">
-                                                        <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  <a id="skills"></a>
+  <div class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <hr>
+      <!-- 1st row of skills -->
+      <div class="row" id="skillsRow1">
+        <div class="col-sm-4 col-xs-4">
+          <!-- Python -->
+          <div class="skill">
+            <img src="../static/img/skills/python-original.svg">
+            <span class="skillName">Python</span>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-4">
+          <!-- Django -->
+          <div class="skill">
+            <img src="../static/img/skills/django-original.svg">
+            <span class="skillName">Django</span>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-4">
+          <!-- Javascript -->
+          <div class="skill">
+            <img src="../static/img/skills/javascript-original.svg">
+            <span class="skillName">Javascript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd row of skills -->
+      <div class="row" id="skillsRow2">
+        <div class="col-sm-2 col-xs-4">
+          <!-- HTML -->
+          <div class="skill">
+            <img src="../static/img/skills/html5-original.svg">
+            <span class="skillName">HTML</span>
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+          <!-- CSS -->
+          <div class="skill">
+            <img src="../static/img/skills/css3-original.svg">
+            <span class="skillName">CSS</span>
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+          <!-- Java -->
+          <div class="skill">
+            <img src="../static/img/skills/java-original.svg">
+            <span class="skillName">Java</span>
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+          <!-- Git -->
+          <div class="skill">
+            <img src="../static/img/skills/git-original.svg">
+            <span class="skillName">Git</span>
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+          <!-- Linux -->
+          <div class="skill">
+            <img src="../static/img/skills/linux-original.svg">
+            <span class="skillName">Linux</span>
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+          <!-- PostgreSQL -->
+          <div class="skill">
+            <img src="../static/img/skills/postgresql-original.svg">
+            <span class="skillName">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="projects"></a>
+  <div class="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Projects</h2>
+          <hr>
+          <div class="row" id="projects_cont">
+            <div class="col-lg-4">
+              <div class="col-lg-12 project">
+                <div class="infoIcon">i</div>
+                <img class="img-responsive" src="{{ url_for('static',filename='img/RedditSaved_dash.png') }}">
+                <div id="redditSavedInfo" class="infoDiv">
+                  <p id="rsInfoTitle" class="infoTitle">Back-end and Front-end</p>
+                  <br>
+                  <p id="rsInfoDesc" class="infoDesc">
+                    A website that uses the Reddit API that
+                    allows you to manage and store Reddit
+                    saved posts with the back-end being in
+                    Python using Django and PostgreSQL.
+                  </p>
+                </div>
+                <h3>Reddit Saved</h3>
+                <div class="row">
+                  <div class="col-sm-12 col-xs-12 ">
+                    <div class="col-sm-12 col-xs-12 ">
+                      <a href="https://github.com/Alackey/RedditSaved" target="_blank" class="text-center">
+                        <div class="icon-div">
+                          <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
                         </div>
-                        <div class="col-lg-4">
-                            <div class="col-lg-12 project">
-                                <div class="infoIcon">i</div>
-                                <img class="img-responsive" src="{{ url_for('static',filename='img/ServiceMarketplace_home.png') }}">
-                                <div id="serviceMarketInfo" class="infoDiv">
-                                    <p id="smInfoTitle" class="infoTitle">Back-end</p>
-                                    <br>
-                                    <p id="smInfoDesc" class="infoDesc">
-                                        A website that was created in group
-                                        of four teammates using Python and
-                                        Django with me implementing user
-                                        accounts, login/register, live bidding,
-                                        and the database.
-                                    </p>
-                                </div>
-                                <h3>Service Marketplace</h3>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 ">
-                                        <div class="col-sm-6 col-xs-6 ">
-                                            <a href="https://github.com/Alackey/ServiceMarketplace" target="_blank" class="text-center">
-                                                <div class="icon-div">
-                                                        <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6">
-                                            <a href="http://alackey.pythonanywhere.com/" target="_blank" class="text-center">
-                                                <div class="icon-div">
-                                                        <img class="icon" src="{{ url_for('static',filename='img/Link-50.png') }}">
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="col-lg-12 project">
-                                <div class="infoIcon">i</div>
-                                <img class="img-responsive" src="{{ url_for('static',filename='img/GetTheTags_play.png') }}">
-                                <div id="guessTagsInfo" class="infoDiv">
-                                    <p id="gttInfoTitle" class="infoTitle">Back-end</p>
-                                    <br>
-                                    <p id="gttInfoDesc" class="infoDesc">
-                                        A website that was created in group
-                                        of three teammates at a Hackathon 
-                                        using Python and Flask which took
-                                        advantage of the Imgur API and Clarifai
-                                        API.
-                                    </p>
-                                </div>
-                                <h3>Guess The Tags</h3>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 ">
-                                        <div class="col-sm-6 col-xs-6 ">
-                                            <a href="https://github.com/Alackey/Guess-The-Tags" target="_blank" class="text-center">
-                                                <div class="icon-div">
-                                                        <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6">
-                                            <a href="http://gtt.alackey.com/" target="_blank" class="text-center">
-                                                <div class="icon-div">
-                                                        <img class="icon" src="{{ url_for('static',filename='img/Link-50.png') }}">
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <a id="experience"></a>
-    <div class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <hr>
-            <div class="row">
-                <div class="col-lg-12 job">
-
-                    <span>Quality Assurance Intern - Mercury Insurance</span>
-                    <p>
-                    - Create test scenarios that need to be tested for new features.
-                    <br>
-                    - Found obscure and rare defects before the feature was published to thousands of users.
-                    <br>
-                    - Practice Agile / Scrum Methodologies.
-                    <br>
-                    - Communicate with Developers and Business Analysts to determine the cause of defects.
-                    <br>
-                    - Test mobile, tablet, and desktop configurations for concurrency and regression.
-                    </p>
+            <div class="col-lg-4">
+              <div class="col-lg-12 project">
+                <div class="infoIcon">i</div>
+                <img class="img-responsive" src="{{ url_for('static',filename='img/ServiceMarketplace_home.png') }}">
+                <div id="serviceMarketInfo" class="infoDiv">
+                  <p id="smInfoTitle" class="infoTitle">Back-end</p>
+                  <br>
+                  <p id="smInfoDesc" class="infoDesc">
+                    A website that was created in group
+                    of four teammates using Python and
+                    Django with me implementing user
+                    accounts, login/register, live bidding,
+                    and the database.
+                  </p>
                 </div>
+                <h3>Service Marketplace</h3>
+                <div class="row">
+                  <div class="col-sm-12 col-xs-12 ">
+                    <div class="col-sm-6 col-xs-6 ">
+                      <a href="https://github.com/Alackey/ServiceMarketplace" target="_blank" class="text-center">
+                        <div class="icon-div">
+                          <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                      <a href="http://alackey.pythonanywhere.com/" target="_blank" class="text-center">
+                        <div class="icon-div">
+                          <img class="icon" src="{{ url_for('static',filename='img/Link-50.png') }}">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-4">
+              <div class="col-lg-12 project">
+                <div class="infoIcon">i</div>
+                <img class="img-responsive" src="{{ url_for('static',filename='img/GetTheTags_play.png') }}">
+                <div id="guessTagsInfo" class="infoDiv">
+                  <p id="gttInfoTitle" class="infoTitle">Back-end</p>
+                  <br>
+                  <p id="gttInfoDesc" class="infoDesc">
+                    A website that was created in group
+                    of three teammates at a Hackathon
+                    using Python and Flask which took
+                    advantage of the Imgur API and Clarifai
+                    API.
+                  </p>
+                </div>
+                <h3>Guess The Tags</h3>
+                <div class="row">
+                  <div class="col-sm-12 col-xs-12 ">
+                    <div class="col-sm-6 col-xs-6 ">
+                      <a href="https://github.com/Alackey/Guess-The-Tags" target="_blank" class="text-center">
+                        <div class="icon-div">
+                          <img class="icon" src="{{ url_for('static',filename='img/GitHub-Filled-50.png') }}">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                      <a href="http://gtt.alackey.com/" target="_blank" class="text-center">
+                        <div class="icon-div">
+                          <img class="icon" src="{{ url_for('static',filename='img/Link-50.png') }}">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
+  <a id="experience"></a>
+  <div class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-12 job">
 
-    <a id="footer"></a>
-    <div class="footer">
-        <div class="container">
-            <ul class="email">
-                <span>Email: </span>
-                <span><a href="#about">alackey96@gmail.com</a></span>
-            </ul>
-            <ul class="bottom">
-                <li><a href="https://www.linkedin.com/in/alackey" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/Alackey/" target="_blank">Github</a></li>
-            </ul>
-            <p>&copy 2016 Anthony Lackey</p>
+          <span>Quality Assurance Intern - Mercury Insurance</span>
+          <p>
+            - Create test scenarios that need to be tested for new features.
+            <br>
+            - Found obscure and rare defects before the feature was published to thousands of users.
+            <br>
+            - Practice Agile / Scrum Methodologies.
+            <br>
+            - Communicate with Developers and Business Analysts to determine the cause of defects.
+            <br>
+            - Test mobile, tablet, and desktop configurations for concurrency and regression.
+          </p>
         </div>
+      </div>
     </div>
+  </div>
+
+
+  <a id="footer"></a>
+  <div class="footer">
+    <div id="footerCont" class="container">
+      <div class="row">
+        <div class="col-xs-8 vertical-align">
+          <ul class="footerText">
+            <li>Email: alackey96@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 vertical-align">
+          <ul id="footerSocials"class="footerText">
+            <li>
+              <a href="https://www.linkedin.com/in/alackey" target="_blank">
+                <img src="{{ url_for('static',filename='img/LinkedIn Filled-50.png') }}">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Alackey/" target="_blank">
+                <img src="{{ url_for('static',filename='img/GitHub Filled-50.png') }}">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="{{ url_for('static',filename='files/resume.pdf') }}" target="_blank">
+                <img src="{{ url_for('static',filename='img/Resume Filled-50.png') }}">
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+</div>
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <!--Include all compiled plugins (below), or include individual files as needed-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<!--Include all compiled plugins (below), or include individual files as needed-->
 
-    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/home.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/smooth-scroll.min.js') }}"></script>
-    <script>
-    smoothScroll.init({speed: 800, offset: 50});
-    </script>
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.waypoints.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/home.js') }}"></script>
+<script src="{{ url_for('static',filename='js/smooth-scroll.min.js') }}"></script>
+<script>
+smoothScroll.init({speed: 800, offset: 50});
+</script>
 </body>
 </html>
