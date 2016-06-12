@@ -142,23 +142,58 @@
 }
 
 .project p {
-	margin-top: 10%;
+	margin-top: 5%;
 	font-size: 1.4em;
 }
 
 .project h4 {
+	min-height: 0 !important;
+	height: 0 !important;
 	position: absolute;
-	bottom: 0;
+	bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 }
 
+.iconRow {
+	min-height: 0 !important;
+	height: 0 !important;
+	position: absolute;
+	bottom: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.icon-div {
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+}
+
+.icon-div:hover {
+	background-color: black;
+}
+
+.icon-div:hover img {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
 @media (max-width: 992px) {
 	.project div {
 		background-color: #616B9F;
 		padding-top: 10px;
+	}
+
+	.project h4 {
+		bottom: 130px;
+	}
+
+	.iconRow {
+		bottom: 110px;
 	}
 }
 
