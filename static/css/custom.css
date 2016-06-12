@@ -116,7 +116,15 @@
 	padding: 10px 0 50px 0;
 }
 
-#projects_cont {
+.project {
+	background-image: url("../img/ProjectBack.svg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-origin: padding-box;
+	padding: 25px 0 25px 0;
+}
+
+/*#projects_cont {
 	opacity: 0;
 	transition: opacity 2s;
 }
@@ -203,7 +211,7 @@
 .icon {
 	height: 25px;
 	width: 25px;
-}
+}*/
 
 
 /* Experience */

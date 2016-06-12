@@ -171,8 +171,21 @@
   <a id="projects"></a>
   <div class="projects">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
+      <h2>Projects</h2>
+      <hr>
+      <div class="row project">
+        <div class="col-sm-6">
+          <img class="img-responsive" src="{{ url_for('static',filename='img/RedditSaved_dash.png') }}">
+        </div>
+        <div class="col-sm-6">
+          <p id="rsInfoDesc" class="infoDesc">
+            A website that uses the Reddit API that
+            allows you to manage and store Reddit
+            saved posts with the back-end being in
+            Python using Django and PostgreSQL.
+          </p>
+        </div>
+        <!-- <div class="col-sm-12">
           <h2>Projects</h2>
           <hr>
           <div class="row" id="projects_cont">
@@ -277,7 +290,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

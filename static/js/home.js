@@ -4,15 +4,15 @@ $(document).ready(function() {
     /*
         Waypoints
     */
-    var wp_projects = new Waypoint({
-        element: document.getElementById('projects_cont'),
-        handler: function(direction) {
-            $("#projects_cont").addClass("animated bounceIn");
-            $("#projects_cont").css("opacity", "1");
-            this.destroy();
-        },
-        offset: '90%'
-    });
+    // var wp_projects = new Waypoint({
+    //     element: document.getElementById('projects_cont'),
+    //     handler: function(direction) {
+    //         $("#projects_cont").addClass("animated bounceIn");
+    //         $("#projects_cont").css("opacity", "1");
+    //         this.destroy();
+    //     },
+    //     offset: '90%'
+    // });
 
     var wp_skillsRow1 = new Waypoint({
         element: document.getElementById('skillsRow1'),
